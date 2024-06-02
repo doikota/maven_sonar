@@ -1,4 +1,4 @@
 /**
 * This package has non null parameters and is documented.
 **/
-package com.aksys.maven_sonar;
+package com.doikota.maven_sonar;

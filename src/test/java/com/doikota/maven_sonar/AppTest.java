@@ -1,6 +1,7 @@
-package com.aksys.maven_sonar;
+package com.doikota.maven_sonar;
 
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class AppTest {

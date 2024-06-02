@@ -7,3 +7,6 @@
 target/*
 report/*
 .scannerwork/
+
+# Log
+log/*
