@@ -1,21 +1,21 @@
 <configuration>
-  <property name="logDir" value="./log" />
-  <property name="fileName" value="maven_sonar" />
-  <property name="format1" value="%d{yyyy/MM/dd HH:mm:ss.SSS} [%-4p] [%c] %m%n" />
+  <property name="output" value="./log" />
+  <property name="prefix" value="maven_sonar" />
+  <property name="format" value="%d{yyyy/MM/dd HH:mm:ss.SSS} [%-4p] [%c] %m%n" />
   
   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-      <fileNamePattern>${logDir}/${fileName}.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <fileNamePattern>${output}/${prefix}.%d{yyyy-MM-dd}.log</fileNamePattern>
     </rollingPolicy>
     <maxHistory>5</maxHistory>
     <encoder>
-      <pattern>${format1}</pattern>
+      <pattern>${format}</pattern>
     </encoder>
   </appender>
   
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
-      <pattern>${format1}</pattern>
+      <pattern>${format}</pattern>
     </encoder>
   </appender>
   

@@ -12,6 +12,8 @@ public class App {
     }
 
     public static void main(String[] args) {
-        logger.info(new App().helloWorld());
+    	App app = new App();
+    	String h = app.helloWorld(); 
+        logger.info(h);
     }
 }
