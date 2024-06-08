@@ -16,6 +16,13 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  
+  <distributionManagement>
+    <repository>
+	  <id>nexus</id>
+	  <url>http://localhost:8081/repository/golden-hosted/</url>
+	</repository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
