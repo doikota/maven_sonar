@@ -1,26 +1,39 @@
 このMavenプロジェクトはSonarQubeとNexusを利用するサンプルです。
 
+プロジェクトをクリーンします。
+```
+mvn clean
+```
+
 Javaコードをコンパイルします。
 ```
-compile
+mvn compile
+```
+
+Javaコードを実行します。
+```
+mvn exec:java
 ```
 
 Javaコードをテストします。
 ```
-test
+mvn test
 ```
 
 コードをパッケージ化し、プロジェクトのアーティファクトを生成します。
 ```
-package
+mvn package
 ```
 
 アーティファクトをローカル・リポジトリに配置する
 ```
-install
+mvn install
 ```
 
 アーティファクトをリモート・リポジトリに配置する
 ```
-deploy
+mvn deploy
 ```
+
+SonarQubeで分析します。
+mvn sonar:sonar
