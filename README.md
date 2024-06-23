@@ -1,5 +1,26 @@
-This project is a sample maven project that uses different maven project.
-このプロジェクトは別のMavenプロジェクトを利用するサンプルです。
+このMavenプロジェクトはSonarQubeとNexusを利用するサンプルです。
 
-It also contains SonarQube static code analysis.
-SonarQubeによる静的コード解析機能も備えます。
+Javaコードをコンパイルします。
+```
+compile
+```
+
+Javaコードをテストします。
+```
+test
+```
+
+コードをパッケージ化し、プロジェクトのアーティファクトを生成します。
+```
+package
+```
+
+アーティファクトをローカル・リポジトリに配置する
+```
+install
+```
+
+アーティファクトをリモート・リポジトリに配置する
+```
+deploy
+```
