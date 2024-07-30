@@ -38,5 +38,5 @@ mvn deploy
 
 ### SonarQubeで分析します。
 ```
-mvn sonar:sonar
+mvn sonar:sonar -D sonar.token=<このプロジェクトのトークン>
 ```
