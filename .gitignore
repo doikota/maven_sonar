@@ -4,9 +4,9 @@
 .settings/
 
 # Build output
-target/*
-report/*
+target/
+report/
 .scannerwork/
 
 # Log
-log/*
+log/
